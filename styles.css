@@ -1,0 +1,191 @@
+/* Reset and base styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Header */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Sections */
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+/* Portfolio or project images */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Hover, Focus, and Active States */
+
+.contact-form button:hover {
+    background-color: #218838;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: white;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.social-links a:hover {
+    color: #007BFF;
+    transform: scale(1.1);
+}
+
+
+/* Mobile Devices (max-width: 768px) */
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        padding: 20px 10px;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+
+/* Tablets (768px to 1024px) */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav ul {
+        gap: 15px;
+    }
+    section {
+        padding: 30px 15px;
+    }
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 0 20px;
+    }
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-color: #333333;
+            color: rgb(150, 158, 41);
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: rgb(80, 124, 51);
+            text-decoration: none;
+        }
+        
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .portfolio-item {
+            margin: 20px 0;
+        }
+        
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        footer {
+            background-color: #33333375;
+            color: #490a2b;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .social-links a {
+            color: rgb(184, 77, 77);
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .contact-form button {
+            background-color: #6bbb7d65;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .contact-form button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome!</h2>
+            <p>Hello, I'm glad you're here. Check out my work and learn more about me.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>My Name is Sandeep Rawal. I am a web developer passionate about building clean and responsive websites.</p>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>My Work</h2>
+
+            <div class="portfolio-item">
+                <img src="C:\Users\admin\Desktop\Sandeep\1.png" alt="Project 1">
+                <p>
+                    Project 1: Developed a responsive and user-friendly food shopping website that allows users to search, browse, and purchase their favorite food items online. The front end was built using HTML, CSS, and JavaScript to ensure an interactive user experience,
+                    while the back end was powered by MySQL for data storage and management.
+                </p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="C:\Users\admin\Desktop\Sandeep\exam.jpg" alt="Project 2">
+                <p>
+                    Project 2: Designed and developed an interactive educational portal where users can watch tutorial videos and take online exams. Built using HTML, CSS, and JavaScript on the front end, with MySQL for managing data and results.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Sandeep Rawal" required />
+                <input type="email" name="email" placeholder="rawalsandy24@gmail.com" required />
+                <textarea name="message" rows="5" placeholder="Hello" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <p>&copy; 2025 Sandeep Rawal. All rights reserved.</p>
+            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
